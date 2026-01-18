@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Auto-increment patch version on Release assemble/bundle tasks
 - Auto-increment build version on Debug/other assemble/bundle tasks
+- BUILD_TIME buildConfigField automatically added to Android projects
 
 ## [1.0.4] - 2026-01-18
 

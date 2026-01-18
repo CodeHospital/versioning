@@ -9,10 +9,10 @@ import java.util.Properties
  */
 object Versioning {
     private const val VERSION_PROPERTIES_FILE = "version.properties"
-    private const val VERSION_BUILD = "versionBuild"
-    private const val VERSION_PATCH = "versionPatch"
-    private const val VERSION_MINOR = "versionMinor"
-    private const val VERSION_MAJOR = "versionMajor"
+    private const val VERSION_BUILD = "Version_Build"
+    private const val VERSION_PATCH = "Version_Patch"
+    private const val VERSION_MINOR = "Version_Minor"
+    private const val VERSION_MAJOR = "Version_Major"
 
     /**
      * Gets the current version code from the version.properties file.
@@ -34,7 +34,7 @@ object Versioning {
      * Gets the current version name in the format major.minor.patch.
      */
     @JvmStatic
-    fun getVersionName(project: Project, buildType: String = "debug"): String {
+    fun getVersionName(project: Project, buildType: String = "release"): String {
         val properties = loadVersionProperties(project)
         val major = properties.getProperty(VERSION_MAJOR, "0")
         val minor = properties.getProperty(VERSION_MINOR, "0")
@@ -43,6 +43,13 @@ object Versioning {
         if (buildType == "debug")
             return "$major.$minor.$patch v$build"
         return "$major.$minor.$patch"
+    }
+
+    @JvmStatic
+    fun getDebugSuffix(project: Project): String {
+      val properties = loadVersionProperties(project)
+      val build = properties.getProperty(VERSION_BUILD, "1")
+      return " v$build"
     }
 
     /**
