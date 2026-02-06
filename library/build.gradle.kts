@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.codehospital"
-version = "1.0.7"
+version = "1.0.8"
 
 gradlePlugin {
     plugins {

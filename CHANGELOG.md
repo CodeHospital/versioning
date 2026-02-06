@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2026-02-06
+
+### Fixed
+- Fixed `VersioningExtension` class accessibility - changed from abstract to open class with @Inject constructor
+
 ## [1.0.7] - 2026-02-06
 
 ### Fixed

@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.codehospital"
-version = "1.0.7"
+version = "1.0.8"
 
 // Disable publishing for root project
 publishing {

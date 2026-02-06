@@ -1,14 +1,13 @@
 package com.codehospital.versioning
 
 import org.gradle.api.Project
-import org.gradle.api.provider.Property
-import org.gradle.api.provider.Provider
+import javax.inject.Inject
 
 /**
  * Gradle extension for accessing versioning functionality in build scripts.
  * This makes Versioning accessible as `versioning` in build.gradle.kts
  */
-abstract class VersioningExtension(private val project: Project) {
+open class VersioningExtension @Inject constructor(private val project: Project) {
 
     fun getVersionCode(buildType: String = "debug"): Int {
         return Versioning.getVersionCode(project, buildType)
