@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2026-02-06
+
+### Changed
+- Set publishing group to `com.github.codehospital` for JitPack compatibility
+- Bumped version alignment across root and library modules
+- Added `sample/` Android app demonstrating plugin usage
+
+## [1.0.10] - 2026-02-06
+
+### Fixed
+- Accessibility of extension and classes when resolving via JitPack
+
 ## [1.0.8] - 2026-02-06
 
 ### Fixed
