@@ -4,8 +4,8 @@ plugins {
     id("java-gradle-plugin")
 }
 
-group = "com.codehospital"
-version = "1.0.10"
+group = "com.github.codehospital"
+version = "1.0.11"
 
 gradlePlugin {
     plugins {

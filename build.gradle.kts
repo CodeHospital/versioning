@@ -2,8 +2,8 @@ plugins {
     `maven-publish`
 }
 
-group = "com.codehospital"
-version = "1.0.10"
+group = "com.github.codehospital"
+version = "1.0.11"
 
 // Disable publishing for root project
 publishing {
